@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "make build"
+    "build": "make"
   },
   "keywords": [],
   "author": "",
