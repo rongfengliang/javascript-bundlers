@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SystemJS Example</title>
+  <script src="/system.0.21.5.js"></script>
+  <script>
+    SystemJS.config({
+      map: {
+        'plugin-babel': '/node_modules/systemjs-plugin-babel/plugin-babel.js',
+        'systemjs-babel-build': '/node_modules/systemjs-plugin-babel/systemjs-babel-browser.js'
+      },
+      transpiler: 'plugin-babel',
+      packages: {
+        '.': {
+          defaultExtension: 'js'
+        }
+      }
+    });
+    SystemJS.import('/main.js');
+  </script>
+</head>
+<body>
+  <p id="result"></p>
+</body>
+</html>
