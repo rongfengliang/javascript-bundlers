@@ -8,5 +8,6 @@ coverage
 *.log
 dist
 dist-dev
+dist-gzip
 node_modules
 .DS_Store
