@@ -1,14 +1,17 @@
 default:
-	make clean && make build && make gzip && make stat
+	make build
+
+build-closure:
+	make pre && npx rollup -c rollup.gcc.config.js && make post
+
+build-cjs:
+	make pre && npx rollup -c rollup.cjs.config.js && make post
 
 build:
-	npx rollup -c rollup.config.js
+	make pre && npx rollup -c rollup.config.js && make post
 
-gzip:
-	cp -r dist dist-gzip && gzip dist-gzip/*
+pre:
+	rm -rf dist dist-gzip && mkdir dist
 
-stat:
-	ls -lhS dist*
-
-clean:
-	rm -rf dist dist-gzip
+post:
+	cp -r dist dist-gzip && gzip dist-gzip/* && ls -lhS dist*
