@@ -1,17 +1,15 @@
 import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
 import {terser} from "rollup-plugin-terser";
 
 export default {
-  input: 'src/main-cjs.js',
+  input: 'src/main-es.js',
   output: {
-    file: 'dist/bundle-cjs.js',
+    file: 'dist/bundle-es.js',
     format: 'iife',
     name: 'mybundle',
   },
   plugins: [
     resolve(),
-    commonjs(),
     terser(),
   ]
 };

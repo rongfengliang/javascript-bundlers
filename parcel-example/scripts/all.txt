@@ -1,0 +1,38 @@
+Build time:
+no cache
+---------------
+Direct CJS: 1674.881ms
+Direct ES: 1679.604ms
+Named ES: 7826.307ms
+
+with cache
+---------------
+Direct ES: 970.307ms
+Direct CJS: 986.147ms
+Named ES: 1717.038ms
+
+Direct ES: 964.531ms
+Direct CJS: 967.049ms
+Named ES: 1713.444ms
+
+Direct CJS: 965.407ms
+Direct ES: 987.729ms
+Named ES: 1728.329ms
+
+Direct ES: 1003.476ms
+Direct CJS: 1012.257ms
+Named ES: 1779.732ms
+
+Direct ES: 1010.719ms
+Direct CJS: 1015.482ms
+Named ES: 1783.033ms
+
+Minified:
+-  43K Oct 26 00:09 bundle.js
+- 629B Oct 26 00:09 bundle-cjs.js
+- 585B Oct 26 00:09 bundle-es.js
+
+Gzipped:
+-  12K Oct 26 00:09 bundle.js.gz
+- 367B Oct 26 00:09 bundle-cjs.js.gz
+- 345B Oct 26 00:09 bundle-es.js.gz

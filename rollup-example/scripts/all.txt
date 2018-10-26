@@ -1,0 +1,46 @@
+Build Time:
+---------------
+Direct ES: 688.511ms
+Direct ES + GCC: 1189.980ms
+Direct CJS + GCC: 1203.702ms
+Named ES: 1956.970ms
+Named ES + GCC: 2630.941ms
+
+Direct ES: 746.627ms
+Direct ES + GCC: 1253.190ms
+Direct CJS + GCC: 1376.651ms
+Named ES: 2079.187ms
+Named ES + GCC: 2769.861ms
+
+Direct ES: 719.520ms
+Direct ES + GCC: 1258.291ms
+Direct CJS + GCC: 1285.126ms
+Named ES: 2111.235ms
+Named ES + GCC: 2765.771ms
+
+Direct ES: 735.267ms
+Direct ES + GCC: 1224.876ms
+Direct CJS + GCC: 1277.759ms
+Named ES: 2009.794ms
+Named ES + GCC: 2696.726ms
+
+Direct ES: 716.566ms
+Direct ES + GCC: 1181.149ms
+Direct CJS + GCC: 1291.987ms
+Named ES: 2004.031ms
+Named ES + GCC: 2734.069ms
+
+
+Minified:
+-  18K Oct 26 00:05 bundle-named-gcc.js
+- 1.2K Oct 26 00:04 bundle.js
+- 582B Oct 26 00:04 bundle-es.js
+- 580B Oct 26 00:04 bundle-cjs.js
+- 563B Oct 26 00:04 bundle-es-gcc.js
+
+Gzipped:
+- 5.5K Oct 26 00:05 bundle-named-gcc.js.gz
+- 680B Oct 26 00:05 bundle.js.gz
+- 342B Oct 26 00:05 bundle-es.js.gz
+- 338B Oct 26 00:05 bundle-cjs.js.gz
+- 332B Oct 26 00:05 bundle-es-gcc.js.gz

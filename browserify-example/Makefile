@@ -1,11 +1,17 @@
 default:
-	make build-cjs
+	make direct-cjs
 
-build-cjs:
-	make pre && node compile-cjs && make post
+all:
+	node scripts/all
 
-build:
-	make pre && node compile && make post
+direct-cjs:
+	node compile-cjs
+
+direct-es:
+	node compile-es
+
+named:
+	node compile
 
 pre:
 	rm -rf dist dist-gzip && mkdir dist

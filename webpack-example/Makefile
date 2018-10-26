@@ -1,14 +1,20 @@
 default:
-	make clean && make build && make gzip && make stat
+	make direct-es
 
-build:
+all:
+	node scripts/all
+
+direct-cjs:
+	npx webpack --entry ./src/main-cjs.js -o dist/bundle-cjs.js --mode production
+
+direct-es:
+	npx webpack --entry ./src/main-es.js -o dist/bundle-es.js --mode production
+
+named:
 	npx webpack --entry ./src/main.js -o dist/bundle.js --mode production
 
-gzip:
-	cp -r dist dist-gzip && gzip dist-gzip/*
+pre:
+	rm -rf dist dist-gzip && mkdir dist
 
-stat:
-	ls -lhS dist*
-
-clean:
-	rm -rf dist dist-gzip
+post:
+	cp -r dist dist-gzip && gzip dist-gzip/* && ls -lhS dist*

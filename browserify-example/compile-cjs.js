@@ -6,4 +6,4 @@ bfy({
   plugin: ['tinyify'],
 })
 .bundle()
-.pipe(fs.createWriteStream('dist/bundle.js'));
+.pipe(fs.createWriteStream('dist/bundle-cjs.js'));
