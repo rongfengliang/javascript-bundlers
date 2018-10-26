@@ -1,8 +1,8 @@
 Build Time:
 ---------------
-build direct cjs: 613.521ms
-build direct es: 1064.102ms
-build named es: 6034.282ms
+direct cjs: 613.521ms
+direct es: 1064.102ms
+named es: 6034.282ms
 
 Direct CJS: 631.040ms
 Direct ES: 1105.285ms

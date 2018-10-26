@@ -1,46 +1,54 @@
 Build Time:
 ---------------
-Direct ES: 688.511ms
-Direct ES + GCC: 1189.980ms
-Direct CJS + GCC: 1203.702ms
-Named ES: 1956.970ms
-Named ES + GCC: 2630.941ms
+Direct ES: 911.467ms
+Direct CJS: 989.239ms
+Direct ES + GCC: 1395.755ms
+Direct CJS + GCC: 1420.509ms
+Named ES: 2163.661ms
+Named ES + GCC: 2853.007ms
 
-Direct ES: 746.627ms
-Direct ES + GCC: 1253.190ms
-Direct CJS + GCC: 1376.651ms
-Named ES: 2079.187ms
-Named ES + GCC: 2769.861ms
+Direct ES: 934.186ms
+Direct CJS: 992.323ms
+Direct ES + GCC: 1429.294ms
+Direct CJS + GCC: 1451.216ms
+Named ES: 2269.863ms
+Named ES + GCC: 2973.988ms
 
-Direct ES: 719.520ms
-Direct ES + GCC: 1258.291ms
-Direct CJS + GCC: 1285.126ms
-Named ES: 2111.235ms
-Named ES + GCC: 2765.771ms
+Direct ES: 876.545ms
+Direct CJS: 1002.538ms
+Direct ES + GCC: 1410.833ms
+Direct CJS + GCC: 1537.521ms
+Named ES: 2218.485ms
+Named ES + GCC: 2930.489ms
 
-Direct ES: 735.267ms
-Direct ES + GCC: 1224.876ms
-Direct CJS + GCC: 1277.759ms
-Named ES: 2009.794ms
-Named ES + GCC: 2696.726ms
+Direct ES: 936.100ms
+Direct CJS: 999.498ms
+Direct ES + GCC: 1528.636ms
+Direct CJS + GCC: 1597.505ms
+Named ES: 2375.086ms
+Named ES + GCC: 3012.332ms
 
-Direct ES: 716.566ms
-Direct ES + GCC: 1181.149ms
-Direct CJS + GCC: 1291.987ms
-Named ES: 2004.031ms
-Named ES + GCC: 2734.069ms
+Direct ES: 945.327ms
+Direct CJS: 1083.986ms
+Direct ES + GCC: 1530.486ms
+Direct CJS + GCC: 1647.790ms
+Named ES: 2488.516ms
+Named ES + GCC: 3148.672ms
 
 
 Minified:
--  18K Oct 26 00:05 bundle-named-gcc.js
-- 1.2K Oct 26 00:04 bundle.js
-- 582B Oct 26 00:04 bundle-es.js
-- 580B Oct 26 00:04 bundle-cjs.js
-- 563B Oct 26 00:04 bundle-es-gcc.js
+-  18K Oct 26 11:49 bundle-named-gcc.js
+- 1.2K Oct 26 11:49 bundle.js
+- 610B Oct 26 11:49 bundle-cjs.js
+- 582B Oct 26 11:49 bundle-es.js
+- 580B Oct 26 11:49 bundle-cjs-gcc.js
+- 563B Oct 26 11:49 bundle-es-gcc.js
 
 Gzipped:
-- 5.5K Oct 26 00:05 bundle-named-gcc.js.gz
-- 680B Oct 26 00:05 bundle.js.gz
-- 342B Oct 26 00:05 bundle-es.js.gz
-- 338B Oct 26 00:05 bundle-cjs.js.gz
-- 332B Oct 26 00:05 bundle-es-gcc.js.gz
+- 5.5K Oct 26 11:49 bundle-named-gcc.js.gz
+- 680B Oct 26 11:49 bundle.js.gz
+- 353B Oct 26 11:49 bundle-cjs.js.gz
+- 342B Oct 26 11:49 bundle-cjs-gcc.js.gz
+- 342B Oct 26 11:49 bundle-es.js.gz
+- 332B Oct 26 11:49 bundle-es-gcc.js.gz
+

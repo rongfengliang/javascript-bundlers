@@ -5,6 +5,22 @@ Direct CJS: 1674.881ms
 Direct ES: 1679.604ms
 Named ES: 7826.307ms
 
+Direct CJS: 1802.775ms
+Direct ES: 1821.423ms
+Named ES: 7953.263ms
+
+Direct CJS: 1710.669ms
+Direct ES: 1714.468ms
+Named ES: 7721.275ms
+
+Direct ES: 1744.318ms
+Direct CJS: 1750.319ms
+Named ES: 7860.883ms
+
+Direct ES: 1804.602ms
+Direct CJS: 1821.228ms
+Named ES: 8168.093ms
+
 with cache
 ---------------
 Direct ES: 970.307ms
