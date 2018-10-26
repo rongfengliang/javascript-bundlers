@@ -1,5 +1,5 @@
 {
-  "name": "webpack-example",
+  "name": "rollup-example",
   "version": "1.0.0",
   "description": "",
   "main": "src/main.js",
@@ -10,8 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.23.1",
-    "webpack-cli": "^3.1.2"
+    "rollup": "^0.66.6",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^3.0.0"
   },
   "dependencies": {
     "ramda": "^0.25.0"
