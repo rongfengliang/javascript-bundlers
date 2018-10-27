@@ -8,13 +8,13 @@ const fuse = FuseBox.init({
     QuantumPlugin({
       uglify: true,
       treeshake: true,
-      bakeApiIntoBundle: "bundle.js",
+      bakeApiIntoBundle: "es-source.js",
     }),
   ]
 });
 
 fuse
-  .bundle("bundle.js")
-  .instructions(" > main.js");
+  .bundle("es-source.js")
+  .instructions(" > es-source.js");
 
 fuse.run();

@@ -3,9 +3,9 @@ import commonjs from 'rollup-plugin-commonjs';
 import compiler from '@ampproject/rollup-plugin-closure-compiler';
 
 export default {
-  input: 'src/main-req.js',
+  input: 'src/cjs.js',
   output: {
-    file: 'dist/bundle-req-gcc.js',
+    file: 'dist/cjs-gcc.js',
     format: 'iife',
     name: 'mybundle',
   },

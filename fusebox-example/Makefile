@@ -4,17 +4,17 @@ default:
 all:
 	node scripts/all
 
-req:
-	node fuse-req
-
-direct-cjs:
-	node fuse-cjs
-
-direct-es:
+es:
 	node fuse-es
 
-named:
-	node fuse
+cjs:
+	node fuse-cjs
+
+es-source:
+	node fuse-es-source
+
+cjs-source:
+	node fuse-cjs-source
 
 pre:
 	rm -rf dist dist-gzip && mkdir dist

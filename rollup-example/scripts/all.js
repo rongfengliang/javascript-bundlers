@@ -17,14 +17,14 @@ const cmdAndMeasure = (n, cmd) => {
 run('make pre')
 .then(() => {
   return Promise.all([
-    cmdAndMeasure('Named ES', 'make named'),
-    cmdAndMeasure('Direct CJS', 'make direct-cjs'),
-    cmdAndMeasure('Require CJS', 'make req'),
-    cmdAndMeasure('Direct ES', 'make direct-es'),
-    cmdAndMeasure('Named ES + GCC', 'make named-gcc'),
-    cmdAndMeasure('Direct ES + GCC', 'make direct-es-gcc'),
-    cmdAndMeasure('Direct CJS + GCC', 'make direct-cjs-gcc'),
-    cmdAndMeasure('Require CJS + GCC', 'make req-gcc'),
+    cmdAndMeasure('ES', 'make es'),
+    cmdAndMeasure('CJS', 'make cjs'),
+    cmdAndMeasure('ES Source', 'make es-source'),
+    cmdAndMeasure('CJS Source', 'make cjs-source'),
+    cmdAndMeasure('ES + GCC', 'make es-gcc'),
+    cmdAndMeasure('CJS + GCC', 'make cjs-gcc'),
+    cmdAndMeasure('ES Source + GCC', 'make es-source-gcc'),
+    cmdAndMeasure('CJS Source + GCC', 'make cjs-source-gcc'),
     ])
 })
 .then((r) => r.forEach(v => console.log(v.stdout)))

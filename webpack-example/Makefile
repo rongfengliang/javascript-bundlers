@@ -4,17 +4,17 @@ default:
 all:
 	node scripts/all
 
-direct-cjs:
-	npx webpack --entry ./src/main-cjs.js -o dist/bundle-cjs.js --mode production
+es:
+	npx webpack --entry ./src/es.js -o dist/es.js --mode production
 
-req:
-	npx webpack --entry ./src/main-req.js -o dist/bundle-req.js --mode production
+cjs:
+	npx webpack --entry ./src/cjs.js -o dist/cjs.js --mode production
 
-direct-es:
-	npx webpack --entry ./src/main-es.js -o dist/bundle-es.js --mode production
+es-source:
+	npx webpack --entry ./src/es-source.js -o dist/es-source.js --mode production
 
-named:
-	npx webpack --entry ./src/main.js -o dist/bundle.js --mode production
+cjs-source:
+	npx webpack --entry ./src/cjs-source.js -o dist/cjs-source.js --mode production
 
 pre:
 	rm -rf dist dist-gzip && mkdir dist

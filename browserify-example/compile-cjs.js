@@ -2,8 +2,8 @@ const fs = require('fs');
 const bfy = require('browserify');
 
 bfy({
-  entries: ['src/main-cjs.js'],
+  entries: ['src/cjs.js'],
   plugin: ['tinyify'],
 })
 .bundle()
-.pipe(fs.createWriteStream('dist/bundle-cjs.js'));
+.pipe(fs.createWriteStream('dist/cjs.js'));

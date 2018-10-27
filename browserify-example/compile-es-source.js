@@ -2,7 +2,7 @@ const fs = require('fs');
 const bfy = require('browserify');
 
 bfy({
-  entries: ['src/main.js'],
+  entries: ['src/es-source.js'],
   plugin: ['tinyify'],
 })
 .transform('babelify', {
@@ -11,4 +11,4 @@ bfy({
   presets: ['@babel/preset-env'],
 })
 .bundle()
-.pipe(fs.createWriteStream('dist/bundle.js'));
+.pipe(fs.createWriteStream('dist/es-source.js'));

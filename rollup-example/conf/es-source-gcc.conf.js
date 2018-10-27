@@ -2,10 +2,11 @@ import resolve from 'rollup-plugin-node-resolve';
 import compiler from '@ampproject/rollup-plugin-closure-compiler';
 
 export default {
-  input: 'src/main.js',
+  input: 'src/es-source.js',
   output: {
-    file: 'dist/bundle-named-gcc.js',
+    file: 'dist/es-source-gcc.js',
     format: 'iife',
+    name: 'mybundle',
   },
   plugins: [
     resolve(),

@@ -4,29 +4,29 @@ default:
 all:
 	node scripts/all
 
-direct-cjs-gcc:
-	npx rollup -c rollup.cjs.gcc.config.js
+es:
+	npx rollup -c conf/es.conf.js
 
-direct-cjs:
-	npx rollup -c rollup.cjs.config.js
+cjs:
+	npx rollup -c conf/cjs.conf.js
 
-req:
-	npx rollup -c rollup.req.config.js
+es-source:
+	npx rollup -c conf/es-source.conf.js
 
-req-gcc:
-	npx rollup -c rollup.req.gcc.config.js
+cjs-source:
+	npx rollup -c conf/cjs-source.conf.js
 
-direct-es:
-	npx rollup -c rollup.es.config.js
+es-gcc:
+	npx rollup -c conf/es-gcc.conf.js
 
-direct-es-gcc:
-	npx rollup -c rollup.gcc.config.js
+cjs-gcc:
+	npx rollup -c conf/cjs-gcc.conf.js
 
-named:
-	npx rollup -c rollup.config.js
+es-source-gcc:
+	npx rollup -c conf/es-source-gcc.conf.js
 
-named-gcc:
-	npx rollup -c rollup.named.gcc.config.js
+cjs-source-gcc:
+	npx rollup -c conf/cjs-source-gcc.conf.js
 
 pre:
 	rm -rf dist dist-gzip && mkdir dist

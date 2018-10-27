@@ -1,72 +1,72 @@
 Build time:
 -----------------
-Direct ES: 1046.935ms
-Direct CJS: 1147.973ms
-Direct ES + GCC: 1684.746ms
-Direct CJS + GCC: 1865.577ms
-Named ES: 2767.154ms
-Require CJS: 3276.142ms
-Named ES + GCC: 3421.680ms
-Require CJS + GCC: 3791.857ms
+ES: 2774.377ms
+CJS: 3313.161ms
+ES Source: 1054.477ms
+CJS Source: 1125.483ms
+ES + GCC: 3411.954ms
+CJS + GCC: 3828.775ms
+ES Source + GCC: 1648.542ms
+CJS Source + GCC: 1787.239ms
 
-Direct ES: 1038.322ms
-Direct CJS: 1199.164ms
-Direct ES + GCC: 1718.532ms
-Direct CJS + GCC: 1970.851ms
-Named ES: 2821.490ms
-Require CJS: 3327.729ms
-Named ES + GCC: 3470.765ms
-Require CJS + GCC: 3859.414ms
+ES: 2897.088ms
+CJS: 3357.383ms
+ES Source: 1091.986ms
+CJS Source: 1205.551ms
+ES + GCC: 3573.607ms
+CJS + GCC: 3945.582ms
+ES Source + GCC: 1717.889ms
+CJS Source + GCC: 1901.911ms
 
-Direct ES: 1018.887ms
-Direct CJS: 1202.452ms
-Direct ES + GCC: 1714.355ms
-Direct CJS + GCC: 2009.237ms
-Named ES: 2777.890ms
-Require CJS: 3366.478ms
-Named ES + GCC: 3459.300ms
-Require CJS + GCC: 3924.867ms
+ES: 2775.530ms
+CJS: 3289.888ms
+ES Source: 1053.518ms
+CJS Source: 1137.282ms
+ES + GCC: 3470.028ms
+CJS + GCC: 3863.310ms
+ES Source + GCC: 1745.148ms
+CJS Source + GCC: 1855.295ms
 
-Direct ES: 1144.797ms
-Direct CJS: 1277.591ms
-Direct ES + GCC: 1916.873ms
-Direct CJS + GCC: 2105.201ms
-Named ES: 3175.014ms
-Require CJS: 3679.403ms
-Named ES + GCC: 3761.440ms
-Require CJS + GCC: 4133.865ms
+ES: 3057.627ms
+CJS: 3683.219ms
+ES Source: 1111.278ms
+CJS Source: 1184.963ms
+ES + GCC: 3803.647ms
+CJS + GCC: 4236.082ms
+ES Source + GCC: 1785.188ms
+CJS Source + GCC: 1932.195ms
 
-Direct ES: 1125.837ms
-Direct CJS: 1263.515ms
-Direct ES + GCC: 1848.446ms
-Direct CJS + GCC: 2108.052ms
-Named ES: 3126.079ms
-Require CJS: 3692.591ms
-Named ES + GCC: 3788.373ms
-Require CJS + GCC: 4173.575ms
+ES: 2861.981ms
+CJS: 3373.838ms
+ES Source: 1039.284ms
+CJS Source: 1183.886ms
+ES + GCC: 3547.752ms
+CJS + GCC: 3959.683ms
+ES Source + GCC: 1718.624ms
+CJS Source + GCC: 1863.247ms
 
 
 Bundle size:
 -----------------
-
 minified:
 
--  44K Oct 26 19:50 bundle-req.js
--  43K Oct 26 19:50 bundle-req-gcc.js
--  18K Oct 26 19:50 bundle-named-gcc.js
-- 1.2K Oct 26 19:50 bundle.js
-- 610B Oct 26 19:50 bundle-cjs.js
-- 582B Oct 26 19:50 bundle-es.js
-- 580B Oct 26 19:50 bundle-cjs-gcc.js
-- 563B Oct 26 19:50 bundle-es-gcc.js
+- 1.2K Oct 26 21:48 es.js
+-  44K Oct 26 21:48 cjs.js
+- 582B Oct 26 21:48 es-source.js
+- 610B Oct 26 21:48 cjs-source.js
+-  18K Oct 26 21:48 es-gcc.js
+-  43K Oct 26 21:48 cjs-gcc.js
+- 563B Oct 26 21:48 es-source-gcc.js
+- 580B Oct 26 21:48 cjs-source-gcc.js
 
-Gzipped:
+Minified + Gzipped
 
--  13K Oct 26 19:50 bundle-req-gcc.js.gz
--  12K Oct 26 19:50 bundle-req.js.gz
-- 5.5K Oct 26 19:50 bundle-named-gcc.js.gz
-- 680B Oct 26 19:50 bundle.js.gz
-- 353B Oct 26 19:50 bundle-cjs.js.gz
-- 342B Oct 26 19:50 bundle-cjs-gcc.js.gz
-- 342B Oct 26 19:50 bundle-es.js.gz
-- 332B Oct 26 19:50 bundle-es-gcc.js.gz
+- 676B Oct 26 21:48 es.js.gz
+-  12K Oct 26 21:48 cjs.js.gz
+- 342B Oct 26 21:48 es-source.js.gz
+- 353B Oct 26 21:48 cjs-source.js.gz
+- 5.5K Oct 26 21:48 es-gcc.js.gz
+-  13K Oct 26 21:48 cjs-gcc.js.gz
+- 332B Oct 26 21:48 es-source-gcc.js.gz
+- 342B Oct 26 21:48 cjs-source-gcc.js.gz
+

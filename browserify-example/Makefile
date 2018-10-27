@@ -4,17 +4,17 @@ default:
 all:
 	node scripts/all
 
-direct-cjs:
-	node compile-cjs
-
-req:
-	node compile-req
-
-direct-es:
+es:
 	node compile-es
 
-named:
-	node compile
+cjs:
+	node compile-cjs
+
+es-source:
+	node compile-es-source
+
+cjs-source:
+	node compile-cjs-source
 
 pre:
 	rm -rf dist dist-gzip && mkdir dist

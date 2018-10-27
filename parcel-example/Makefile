@@ -4,17 +4,17 @@ default:
 all:
 	node scripts/all
 
-direct-cjs:
-	npx parcel build ./src/main-cjs.js --experimental-scope-hoisting -o dist/bundle-cjs.js
+es:
+	npx parcel build ./src/es.js --experimental-scope-hoisting -o dist/es.js
 
-req:
-	npx parcel build ./src/main-req.js --experimental-scope-hoisting -o dist/bundle-req.js
+cjs:
+	npx parcel build ./src/cjs.js --experimental-scope-hoisting -o dist/cjs.js
 
-direct-es:
-	npx parcel build ./src/main-es.js --experimental-scope-hoisting -o dist/bundle-es.js
+es-source:
+	npx parcel build ./src/es-source.js --experimental-scope-hoisting -o dist/es-source.js
 
-named:
-	npx parcel build ./src/main.js --experimental-scope-hoisting -o dist/bundle.js
+cjs-source:
+	npx parcel build ./src/cjs-source.js --experimental-scope-hoisting -o dist/cjs-source.js
 
 pre:
 	rm -rf dist dist-gzip && mkdir dist

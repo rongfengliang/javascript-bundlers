@@ -17,10 +17,10 @@ const cmdAndMeasure = (n, cmd) => {
 run('make pre')
 .then(() => {
   return Promise.all([
-    cmdAndMeasure('Named ES', 'make named'),
-    cmdAndMeasure('Direct ES', 'make direct-es'),
-    cmdAndMeasure('Direct CJS', 'make direct-cjs'),
-    cmdAndMeasure('Require CJS', 'make req'),
+    cmdAndMeasure('ES', 'make es'),
+    cmdAndMeasure('CJS', 'make cjs'),
+    cmdAndMeasure('ES Source', 'make es-source'),
+    cmdAndMeasure('CJS Source', 'make cjs-source'),
     ])
 })
 // .then((r) => r.forEach(v => console.log(v.stdout)))
