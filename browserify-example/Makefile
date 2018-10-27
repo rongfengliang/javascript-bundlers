@@ -7,6 +7,9 @@ all:
 direct-cjs:
 	node compile-cjs
 
+req:
+	node compile-req
+
 direct-es:
 	node compile-es
 

@@ -19,6 +19,7 @@ run('make pre')
   return Promise.all([
     cmdAndMeasure('Named ES', 'make named'),
     cmdAndMeasure('Direct CJS', 'make direct-cjs'),
+    cmdAndMeasure('Require CJS', 'make req'),
     cmdAndMeasure('Direct ES', 'make direct-es'),
     cmdAndMeasure('Named ES + GCC', 'make named-gcc'),
     cmdAndMeasure('Direct ES + GCC', 'make direct-es-gcc'),

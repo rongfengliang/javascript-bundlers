@@ -1,31 +1,41 @@
 Build Time:
 ---------------
-Direct CJS: 1167.715ms
-Direct ES: 1187.899ms
-Named ES: 1659.521ms
+Direct CJS: 967.897ms
+Direct ES: 998.598ms
+Named ES: 1772.706ms
+Require CJS: 1788.877ms
 
-Direct CJS: 853.081ms
-Direct ES: 862.738ms
-Named ES: 1602.934ms
+Direct CJS: 928.617ms
+Direct ES: 941.452ms
+Named ES: 1683.232ms
+Require CJS: 1718.811ms
 
-Direct CJS: 872.361ms
-Direct ES: 897.482ms
-Named ES: 1640.425ms
+Direct CJS: 950.693ms
+Direct ES: 956.284ms
+Named ES: 1754.604ms
+Require CJS: 1785.967ms
 
-Direct CJS: 885.115ms
-Direct ES: 902.732ms
-Named ES: 1640.657ms
+Direct CJS: 952.164ms
+Direct ES: 978.867ms
+Named ES: 1764.016ms
+Require CJS: 1799.066ms
 
-Direct CJS: 852.687ms
-Direct ES: 869.967ms
-Named ES: 1597.541ms
+Direct ES: 994.102ms
+Direct CJS: 992.751ms
+Named ES: 1784.534ms
+Require CJS: 1794.918ms
 
-Minified:
-- 3.0K Oct 25 23:42 bundle.js
-- 1.6K Oct 25 23:42 bundle-cjs.js
-- 1.5K Oct 25 23:42 bundle-es.js
+Bundle size:
+------------------
+
+minified:
+-  51K Oct 26 19:17 bundle-req.js
+- 3.0K Oct 26 19:17 bundle.js
+- 1.6K Oct 26 19:17 bundle-cjs.js
+- 1.5K Oct 26 19:17 bundle-es.js
 
 Gzipped:
-- 1.3K Oct 25 23:42 bundle.js.gz
-- 723B Oct 25 23:42 bundle-cjs.js.gz
-- 699B Oct 25 23:42 bundle-es.js.gz
+-  12K Oct 26 19:17 bundle-req.js.gz
+- 1.3K Oct 26 19:17 bundle.js.gz
+- 723B Oct 26 19:17 bundle-cjs.js.gz
+- 699B Oct 26 19:17 bundle-es.js.gz

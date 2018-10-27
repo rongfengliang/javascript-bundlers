@@ -7,6 +7,9 @@ all:
 direct-cjs:
 	npx webpack --entry ./src/main-cjs.js -o dist/bundle-cjs.js --mode production
 
+req:
+	npx webpack --entry ./src/main-req.js -o dist/bundle-req.js --mode production
+
 direct-es:
 	npx webpack --entry ./src/main-es.js -o dist/bundle-es.js --mode production
 

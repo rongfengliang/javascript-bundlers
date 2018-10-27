@@ -20,6 +20,7 @@ run('make pre')
     cmdAndMeasure('Named ES', 'make named'),
     cmdAndMeasure('Direct ES', 'make direct-es'),
     cmdAndMeasure('Direct CJS', 'make direct-cjs'),
+    cmdAndMeasure('Require CJS', 'make req'),
     ])
 })
 .then((r) => r.forEach(v => console.log(v.stdout)))

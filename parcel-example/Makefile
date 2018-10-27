@@ -7,6 +7,9 @@ all:
 direct-cjs:
 	npx parcel build ./src/main-cjs.js --experimental-scope-hoisting -o dist/bundle-cjs.js
 
+req:
+	npx parcel build ./src/main-req.js --experimental-scope-hoisting -o dist/bundle-req.js
+
 direct-es:
 	npx parcel build ./src/main-es.js --experimental-scope-hoisting -o dist/bundle-es.js
 
