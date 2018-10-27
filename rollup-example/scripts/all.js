@@ -24,6 +24,7 @@ run('make pre')
     cmdAndMeasure('Named ES + GCC', 'make named-gcc'),
     cmdAndMeasure('Direct ES + GCC', 'make direct-es-gcc'),
     cmdAndMeasure('Direct CJS + GCC', 'make direct-cjs-gcc'),
+    cmdAndMeasure('Require CJS + GCC', 'make req-gcc'),
     ])
 })
 .then((r) => r.forEach(v => console.log(v.stdout)))

@@ -13,6 +13,9 @@ direct-cjs:
 req:
 	npx rollup -c rollup.req.config.js
 
+req-gcc:
+	npx rollup -c rollup.req.gcc.config.js
+
 direct-es:
 	npx rollup -c rollup.es.config.js
 
